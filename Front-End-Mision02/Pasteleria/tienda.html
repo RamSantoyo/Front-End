@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pateleria galactica</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor barra">
+            <a href="#">
+                <img src="imagenes/logo.png" alt="logo">
+            </a>
+            <div class="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="#">Nosotros</a>                
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>        
+    </header>
+    <div class="img-barra">
+        <img src="imagenes/portada02.jpg" alt="portada">
+    </div>
+
+    <section class="contenedor seccion cnt-frm">
+        <form action="" class="form">
+            <h1>Crea tu Pastel</h1>
+            <ul>
+                <li class="checks">
+                    <label>Elige tus sabores:</label>
+                    <div class="inputs">                        
+                        <input name="sabores" type="checkbox">
+                        <label for="sabores">Chocolate</label>
+                    </div>
+                    <div class="inputs">                        
+                        <input name="sabores" type="checkbox">
+                        <label for="sabores">Vainilla</label>
+                    </div>
+                    <div class="inputs">                        
+                        <input name="sabores" type="checkbox">
+                        <label for="sabores">Fresa</label>
+                    </div>
+                    <div class="inputs">                        
+                        <input name="sabores" type="checkbox">
+                        <label for="sabores">Cafe</label>
+                    </div>
+                </li>
+                <li class="checks">
+                    <label>Elige tus adornos:</label>
+                    <div class="inputs">                        
+                        <input name="sabores" type="checkbox">
+                        <label for="sabores">Velitas: $20</label>
+                    </div>
+                    <div class="inputs">                        
+                        <input name="sabores" type="checkbox">
+                        <label for="sabores">Gorritos: $33</label>
+                    </div>
+                    <div class="inputs">                        
+                        <input name="sabores" type="checkbox">
+                        <label for="sabores">Cerbatanas: $15</label>
+                    </div>
+                    <div class="inputs">                        
+                        <input name="sabores" type="checkbox">
+                        <label for="sabores">Varitas: $25</label>
+                    </div>
+                </li>
+                <li class="radio">                  
+                    <label for="tamaño">Selecciona el tamaño:</label>
+                    <div class="inputs"> 
+                        <input class="input" type="radio" name="pastel" value="1">
+                        <label for="pastel">Chico: $299</label>
+                    </div>
+                    <div class="inputs"> 
+                        <input class="input" type="radio" name="pastel" value="2">
+                        <label for="pastel">Mediano: $459</label>
+                    </div>
+                    <div class="inputs"> 
+                        <input class="input" type="radio" name="pastel" value="3" checked>
+                        <label for="pastel">Grande: $600</label>
+                    </div>
+                </li>
+              </ul>
+              
+                <h2>Datos de contacto</h2>
+                <div class="datos-cnt">
+                    <label for="nombre" >Nombre</label>
+                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+
+                    <label for="numero" >Numero de celular</label>
+                    <input type="number" placeholder="Celular" name="numero" id="numero" required>
+                    
+                    <label for="correo" >Correo</label>
+                    <input type="email" placeholder="Correo" name="correo" id="correo" required>
+                    
+                    <label for="direccion" >Direccion</label>
+                    <textarea placeholder="Tu Direccion" name="direccion" id="direccion" required></textarea>
+                </div>
+                <input type="button" value="Enviar" class="seccion" id="boton-frm">   
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor cnt-footer">
+            <a href="#">
+                <img src="imagenes/logo.png" alt="logo">
+            </a>
+            <div class="contenido-foot enlaces">
+                <ul>
+                    <p>Menu</p>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="#">Nosotros</a></li>                    
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="contenido-foot enlaces">
+                <ul>
+                    <p>Redes</p>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="contenido-foot enlaces">
+                <ul>
+                    <p>Contacto</p>
+                    <li><a href="#">soporte@explorer.mx</a></li>
+                    <li><a href="#">contacto@explorer.mx</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="seccion copyright">Todos los derechos reservados 2022 &copy;</p>
+    </footer>
+    
+</body>
+</html>

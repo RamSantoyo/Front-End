@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard PasteleriaS</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor barra">
+            <a href="#">
+                <img src="imagenes/logo.png" alt="logo">
+            </a>
+            <div class="enlaces">
+                <a href="index.html">Pedidos</a>
+                <a href="#"><img src="imagenes/user.png" alt="usuario"></a>
+            </div>
+        </div>        
+    </header>
+    <section class="dashboard seccion contenedor">
+        <div class="grafico">
+            <h1>Ventas del mes</h1>
+            <div class="piechart"></div>
+        </div>
+
+        <h2>Inventario</h2>
+        
+        <table class="li-propiedades contenedor seccion">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Cantidad disponible</th>                    
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+        
+            <tbody>                
+                <tr>            
+                    <td>1</td>
+                    <td>Chocolate</td>
+                    <td>15</td>                    
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="EDITAR">           
+                        <input type="submit" class="boton-tabla rojo" value="ELIMINAR">
+                    </div>                                         
+                    </td>                           
+                </tr>
+                <tr>            
+                    <td>2</td>
+                    <td>Vainilla</td>
+                    <td>11</td>                    
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="EDITAR">           
+                        <input type="submit" class="boton-tabla rojo" value="ELIMINAR">
+                    </div>                                         
+                    </td>                           
+                </tr>
+                <tr>            
+                    <td>3</td>
+                    <td>Fresa</td>
+                    <td>22</td>                    
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="EDITAR">           
+                        <input type="submit" class="boton-tabla rojo" value="ELIMINAR">
+                    </div>                                         
+                    </td>                           
+                </tr>
+                <tr>            
+                    <td>4</td>
+                    <td>Cafe</td>
+                    <td>6</td>                    
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="EDITAR">           
+                        <input type="submit" class="boton-tabla rojo" value="ELIMINAR">
+                    </div>                                         
+                    </td>                           
+                </tr> 
+            </tbody>
+        
+        </table>
+
+        <h2>Pedidos</h2>
+
+        <table class="li-propiedades seccion">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Celular</th>                    
+                    <th>Correo</th>
+                    <th>Direccion</th>
+                    <th>Resumen Pedido</th>
+                    <th>Estado</th>                    
+                </tr>
+            </thead>
+        
+            <tbody>                
+                <tr>            
+                    <td>1</td>
+                    <td>Ramsess Santoyo</td>
+                    <td>5531567430</td>                    
+                    <td>ramsess@launchux.mx</td>
+                    <td>Iztapalapa, Cuauhtemoc, calle:niños heroes numexterior:98</td>
+                    <td>Pastel: Chocolate Adorno:Gorros,Velas Tamaño:Grande</td>
+                    <td>
+                    <div class="botones-tabla">                        
+                        <input type="submit" class="boton-tabla amarillo" value="CANCELADO">           
+                        <input type="submit" class="boton-tabla verde" value="ENTREGADO">
+                    </div>                                         
+                    </td>                           
+                </tr> 
+            </tbody>
+        
+        </table>
+    </section>
+    
+    <footer class="footer">
+        <div class="contenedor cnt-footer">
+            <a href="#">
+                <img src="imagenes/logo.png" alt="logo">
+            </a>
+            <div class="contenido-foot enlaces">
+                <ul>
+                    <p>Menu</p>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="#">Nosotros</a></li>                    
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="contenido-foot enlaces">
+                <ul>
+                    <p>Redes</p>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                </ul>
+            </div>
+            <div class="contenido-foot enlaces">
+                <ul>
+                    <p>Contacto</p>
+                    <li><a href="#">soporte@explorer.mx</a></li>
+                    <li><a href="#">contacto@explorer.mx</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="seccion copyright">Todos los derechos reservados 2022 &copy;</p>
+    </footer>
+    
+</body>
+</html>

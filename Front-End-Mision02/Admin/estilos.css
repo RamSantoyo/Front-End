@@ -1,0 +1,260 @@
+/*==================================
+URL
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@200;400;600&display=swap');
+
+
+/*==================================
+Variables
+====================================*/
+
+:root {
+    /* Fuentes */
+    --fuente-principal:  'Montserrat', sans-serif;
+
+    /* Tamaño */
+    --delgada: 200;
+    --regular : 400;
+    --grande: 600;
+
+    /* Colores */
+    --fondo: #080022;
+    --blanco: #f8f8f8;
+    --negro: #000000;
+    --azul: #009bd8;
+    --amarillo: #f7bd00;
+    --rojo: #f70000;
+    --verde: #129b06;
+
+
+    /* separaciones */
+    --separacion: 5rem;
+    --separacion-top: 8rem;
+    --separacion-titulo: 3rem;     
+}
+
+body{
+    font-family: var(--fuente-principal);
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+img{
+    width: 100%;
+}
+
+.contenedor{
+    width: min(85%, 120rem);
+    margin: 0 auto;
+}
+
+.seccion{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+/*==================================
+Header
+====================================*/
+.header{
+    background-color: var(--fondo);
+    padding: .5rem;    
+}
+
+.header img{
+    width: 12%;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaces{
+    display: flex;
+    gap: 2rem;
+}
+
+.enlaces a{
+    color: var(--blanco);
+}
+
+.enlaces a:hover{
+    color: var(--azul);
+}
+
+.img-barra img{
+    width: 100%;
+    height: 30rem;
+}
+
+/*==================================
+Seccion 1
+====================================*/
+.descripcion{
+    text-align: center;
+}
+
+/*==================================
+Footer
+====================================*/
+.footer{
+    background-color: var(--fondo);
+    padding: 2rem;
+}
+
+.footer img{
+    width: 50%;
+}
+
+.cnt-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.contenido-foot p, li{
+    color: var(--blanco);
+}
+
+
+.contenido-foot p{
+    font-size: 1.2rem;
+}
+
+.copyright{
+    color: var(--blanco);
+    text-align: center;
+}
+
+/*==================================
+Formulario
+====================================*/
+.cnt-frm label{
+    color: var(--negro);
+    font-size: 1.2rem;
+}
+
+input, label:hover{
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: block;    
+}
+
+.inputs input{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.radio input{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.checks{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.form h1, h2{
+    text-align: center;
+}
+
+.datos-cnt input{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    height: 10rem;
+}
+
+#boton-frm{
+    background-color: var(--fondo);
+    color: var(--blanco);
+    padding: 1rem;
+    border:none;
+}
+
+/*==================================
+Admin Head
+====================================*/
+.enlaces img{
+    width: 25%;
+}
+
+.enlaces{
+    align-items: center;
+}
+
+.piechart {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    background-image: conic-gradient(
+        pink 70deg, 
+        lightblue 0 235deg, 
+        orange 0);
+}
+
+.grafico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table{
+    text-align: center;
+}
+
+.botones-tabla{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.boton-tabla{
+    padding: .5rem;
+    color: var(--blanco);
+    border: none;
+}
+
+.amarillo{
+    background: var(--amarillo);
+}
+
+.rojo{
+    background: var(--rojo);
+}
+
+.verde{
+    background: var(--verde);
+}
+
+td{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
