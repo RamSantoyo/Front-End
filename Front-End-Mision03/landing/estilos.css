@@ -1,0 +1,571 @@
+/*==================================
+URL
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@200;400;600&display=swap&family=Be+Vietnam+Pro:wght@800&display=swap');
+
+
+/*==================================
+Variables
+====================================*/
+
+:root {
+    /* Fuentes */
+    --fuente-titulo:  'Montserrat', sans-serif;
+    --funte-titulo-bold: 'Be Vietnam Pro', sans-serif;
+    --fuente-principal:  'Outfit', sans-serif;
+
+    /* Tamaño */
+    --delgada: 200;
+    --regular : 400;
+    --grande: 600;
+
+    /* Colores */
+    --azul: #2448da;
+    --azul-fuerte: #1f3e72;
+    --celeste: #e7f3fc;
+    --gris: #697383;
+    --blanco: #ffffff;
+    --amarillo: #ffbb00;
+    
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    line-height: 1.5;    
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulo);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+ul, li{
+    list-style: none;
+    padding-left: 0;
+}
+
+img, picture, video{
+    width: 100%;
+    display: block;
+}
+
+/** Utilidades **/
+
+.contenedor{
+    width: min(80%, 120rem);
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/*==================================
+                HEADER
+====================================*/
+
+.header{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 50%, rgb(222, 240, 255) 55%);
+    padding: 1.5rem;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p{
+    font-weight: var(--grande);
+    font-size: 3rem;
+    color: var(--azul);
+}
+
+
+.navegacion{
+    display: flex;
+    gap: 4rem;
+}
+
+.navegacion a{
+    color: var(--gris);
+    font-size: 1.8rem;
+}
+
+.boton-nav a{
+    background-color: var(--azul);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: .5rem;
+    color: var(--blanco);
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+}
+
+/*==================================
+                CABECERA
+====================================*/
+
+.cabecera{
+    position: relative;
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.cb-1{
+        padding-left: 8rem;
+        background-image: url(recursos/triangulos.jpg);
+        background-blend-mode: soft-light;
+        height: 70rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+
+}
+
+.cb-1 h1{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 5rem;
+    width: 90%;
+    text-align: left;
+}
+
+.cb-1 p{
+    color: var(--gris);
+    font-size: 2rem;
+}
+
+.etiquetas{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.fa-solid{
+    color: var(--amarillo);
+}
+
+.fa-clock{
+    color: var(--azul);
+}
+
+.etiqueta{
+    margin-top: 8rem;
+}
+
+.cb-2{
+    background-image: url(recursos/enfermera.jpg);
+    background-blend-mode: soft-light;
+    height: 70rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*==================================
+                BANNER
+====================================*/
+.banner{
+    position: absolute;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+    border-radius: 1rem;
+    margin: -16rem 1rem 1rem 15rem;
+    background-color: var(--blanco);
+}
+
+.cnt-ban i{
+    color: var(--azul);
+}
+
+.cnt-ban p{
+    padding-left: 1rem;
+}
+
+.btn-bann{
+    padding: 2rem;
+}
+
+.btn-bann a{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+/*==================================
+                CARRUSEL
+====================================*/
+.carrusel{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.carrusel img{
+    object-fit: cover;
+}
+/*==================================
+             INFORMACION
+====================================*/
+
+.informacion h2{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 4rem;
+    width: 90%;
+    text-align: left;
+}
+
+.informacion p{
+    color: var(--gris);
+    font-size: 2rem;
+    width: 50%;
+}
+
+.tarjetas{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.tarjeta{
+    box-shadow: 0px 5px 15px rgba(222, 240, 255);
+    border-radius: .5rem;
+    padding: 3rem;
+}
+
+.tarjeta i{
+    color: var(--azul);
+    background-color: var(--celeste);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 3rem;
+}
+
+.tarjeta h3{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: left;
+}
+
+.tarjeta p{
+    color: var(--gris);
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+/*==================================
+             PREPARACION
+====================================*/
+
+.cnt-preparation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.img-preparation{
+    margin-top: 5rem;
+    padding-left: 8rem;
+    background-image: url(recursos/paciente.jpg);
+    background-blend-mode: soft-light;
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+
+.contenido-preparacion h2{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.contenido-preparacion p{
+    color: var(--gris);
+    font-size: 2rem;
+    width: 100%;
+}
+
+.acordeon{
+    margin-top: 2rem;
+    padding: 4rem;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion {
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: var(--blanco);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 2px 5px rgb(216, 216, 216);
+    transition-duration: 0.5s;
+  }
+  
+  .accordion i{
+    font-size: 2rem;
+    color: var(--azul);
+    padding-right: 1rem;
+    background-color: var(--celeste);
+    padding: .8rem;
+    border-radius: .5rem;
+  }
+
+  .active, .accordion:hover {
+    transition-duration: 0.5s;
+    background-color: var(--celeste);
+  }
+  
+  .panel {
+    transition-duration: 0.5s;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .panel p{
+    color: var(--gris);
+    font-size: 1.6rem;
+  }
+
+
+/*==================================
+             CONTACTO
+====================================*/
+.cnt-contact{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.ctn-ctc h2{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: left;
+  }
+
+.ctn-ctc p{
+    color: var(--gris);
+    font-size: 2rem;
+    width: 90%;
+}
+
+.img-contact{
+    margin-top: 10rem;
+    padding-left: 8rem;
+    background-image: url(recursos/enfermero.jpg);
+    background-blend-mode: soft-light;
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+
+.cnt-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.cnt-tarjeta{
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 5px rgb(216, 216, 216);
+}
+
+.contenido-trj{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-trj i{
+    color: var(--azul);
+    font-size: 2rem;
+    background-color: var(--celeste);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+}
+
+.contenido-trj h3{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.contenido-trj p{
+    color: var(--gris);
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+.btn-celeste{
+    background-color: var(--celeste);
+    color: var(--azul);
+    font-weight: var(--grande);
+    font-family: var(--fuente-principal);
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+}
+
+.btn-celeste:hover{
+    transition-duration: 0.4s;
+    background-color: var(--azul);
+    color: var(--celeste);
+    font-weight: var(--regular);
+    font-family: var(--fuente-principal);
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+}
+
+
+/*==================================
+             FOOTER
+====================================*/
+
+.ctn-foot{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer{    
+    background-color: var(--celeste); 
+    padding: 4rem;
+}
+.leyenda{    
+    color: var(--gris);
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+.foot-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.ft-mnu h2{
+    color: var(--azul-fuerte);
+    font-weight: var(--grande);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.lista li{
+    margin-top: 2rem;
+}
+
+.lista a{
+    color: var(--gris);
+    font-size: 1.5rem;    
+}
+
+.copy p{
+    color: var(--gris);
+    font-size: 1.6rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.copy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
