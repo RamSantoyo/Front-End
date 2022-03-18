@@ -1,0 +1,17 @@
+fairy
+dark
+dragon
+ice
+psychic
+electric
+grass
+water
+fire
+steel
+ghost
+bug
+rock
+ground
+poison
+flying
+fighting
