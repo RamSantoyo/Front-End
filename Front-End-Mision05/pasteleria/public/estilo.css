@@ -1,0 +1,94 @@
+/*==================================
+URL
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+
+/*==================================
+Variables
+====================================*/
+
+:root {
+    /* Fuentes */
+    --fuente-principal: 'Montserrat', sans-serif;
+
+    /* Tamaño */
+    --delgada: 100;
+    --regular : 300;
+    --grande: 500;
+
+    /* Colores */
+    --verde-oscuro: #2c3e50;
+    --fondo: #080022;
+    --blanco: #ffffff;
+    --cursor:#a488ff;
+
+    /* separaciones */
+    --separacion: 5rem;     
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    color: var(--verde-oscuro);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: var(--gris-claro);    
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-principal);
+    text-transform: uppercase;
+    font-weight:var(--grande);
+    text-align: center;    
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: 2rem;
+}
+
+img, picture, video{
+    width: 100%;
+    display: block;
+}
+
+li {
+    list-style:none;
+}
+
+/** Utilidades **/
+
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
